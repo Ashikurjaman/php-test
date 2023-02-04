@@ -33,3 +33,39 @@
 
 
 //                                                                        day 2
+// variable swaping
+
+$fname = "ashikur";
+$lname = "nur";
+$middlename = "jaman";
+
+printf('His name is %2$s %3$s %1$s', $fname, $lname, $middlename);
+
+echo "<br>";
+
+
+printf('number %1$d to %1$b', 12);
+
+echo "<br>";
+
+$nu = 45.233;
+
+printf("%.1f", $nu);
+
+$output = sprintf("my name is %s %s", $fname, $lname);
+echo $output;
+
+echo "<br>";
+
+$value = 4000;
+
+if ($value % 4 == 0 && ($value % 100 != 0 || $value % 400 == 0)) {  // true  and  (false or true)
+    echo " $value is leap year ";
+} else {
+    echo " this year is not a leap year";
+}
+echo "<br>";
+
+$checkTernary = (2028 == $value ? "2028" : ((2029 == $value) ? " 2029" : ((3020 == $value) ? "3020" : "other number")));
+
+echo "{$value} is a $checkTernary ";
